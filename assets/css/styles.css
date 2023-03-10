@@ -47,8 +47,7 @@ a {
   position: sticky;
   top: -26px;
   z-index: 1;
-  /* background-color: #8bc6ec;
-  background-image: -webkit-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  /* background-image: -webkit-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
   background-image: -moz-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
   background-image: -o-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
   background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%); */
@@ -114,7 +113,7 @@ a {
 .hero {
   height: calc(100vh - 90px);
   position: relative;
-  background: center / cover no-repeat url(/assets/img/img-h.jpg);
+  background: url('/assets/img/img-h.jpg')  center / cover no-repeat ;
 }
 
 .hero .info {
@@ -573,7 +572,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: center / cover no-repeat url(/assets/img/img-thong-tin.jpg);
+  background: center / cover no-repeat url('/assets/img/img-thong-tin.jpg');
   border-radius: 10px;
   padding: 40px 0;
 }
