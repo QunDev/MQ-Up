@@ -113,7 +113,7 @@ a {
 .hero {
   height: calc(100vh - 90px);
   position: relative;
-  background: url('/assets/img/img-h.jpg')  center / cover no-repeat ;
+  background: url('../img/img-h.jpg')  center / cover no-repeat ;
 }
 
 .hero .info {
@@ -572,7 +572,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: center / cover no-repeat url('/assets/img/img-thong-tin.jpg');
+  background: center / cover no-repeat url('../img/img-thong-tin.jpg');
   border-radius: 10px;
   padding: 40px 0;
 }
