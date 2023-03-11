@@ -69,19 +69,19 @@ a {
   margin-right: 50px;
 }
 
-.navbar > ul {
+.navbar .nav-link {
   display: flex;
   margin-left: 80px;
 }
 
-.navbar ul a {
+.navbar .nav-link a {
   font-weight: 600;
   font-size: 1.683rem;
   color: #333e68;
   padding: 14px;
 }
 
-.navbar ul a:hover {
+.navbar .nav-link a:hover {
   color: #f69c70;
 }
 
@@ -269,7 +269,6 @@ main {
 }
 
 .guides .desc {
-  width: 42%;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.88;
@@ -278,9 +277,7 @@ main {
 }
 
 .guides .content {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  text-align: center;
 }
 
 .guide {
@@ -719,4 +716,220 @@ main {
   font-weight: 400;
   font-size: 1.4rem;
   color: violet;
+}
+
+/* =====================Responsive================ */
+/* Navigation */
+.navbar .bars i {
+  font-size: 2.8rem;
+  display: none;
+  margin-right: 16px;
+}
+
+.mobile-close {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  color: #000;
+  font-size: 2.8rem;
+  display: none;
+}
+
+.navbar .overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.nav-mobile{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background: #e6f0ff;
+  display: none;
+  transform: translateX(100%);
+}
+
+.navbar .link-mobile a{
+  font-size: 1.683rem;
+  font-weight: 600;
+  padding: 16px;
+  display: block;
+}
+
+.navbar .link-mobile a i, .navbar .btn-mobile a i {
+  margin-right: 8px;
+}
+
+.navbar .btn-mobile a {
+  font-size: 1.683rem;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-left: 16px;
+  display: block;
+}
+
+.navbar .link-mobile li:first-of-type {
+  margin-top: 80px;
+}
+
+.navbar .link-mobile li a:hover{
+  background-image: -webkit-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  background-image: -moz-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  background-image: -o-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+
+@media (max-width: 739px) {
+  .content {
+    width: 100% !important;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar .bars i {
+    display: block;
+  }
+
+  .nav-input:checked ~ .nav-mobile{
+    transform: translateX(0);
+  }
+
+  .mobile-close {
+    display: block;
+  }
+
+  .navbar .nav-link {
+    display: none;
+  }
+
+  .navbar .action {
+    display: none;
+  }
+
+  .nav-input:checked ~ .overlay {
+    display: block;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .navbar .nav-logo {
+    margin-left: 16px;
+  }
+
+  /* ================hero================ */
+
+  h1 {
+    text-align: center;
+    padding-top: 32px;
+  }
+
+  .hero .icon {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 64px;
+  }
+
+ .hero .hero-img {
+    display: none;
+  }
+
+  .hero .info {
+    width: 100%;
+  }
+
+  .hero .info p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 16px;
+  }
+
+  .hero .hero-info {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Client */
+  .clients .row {
+    justify-content: space-around;
+  }
+
+  .clients .clients-img {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  /* Guide */
+  .guide {
+    justify-content: space-around;
+  }
+
+  .list-guide {
+    margin: 0;
+  }
+
+  /* Featured */
+  #features header {
+    margin: 0 16px 90px 16px;
+  }
+
+  .featured .list {
+    flex-wrap: wrap;
+    gap: 32;
+    justify-content: center;
+  }
+
+  .featured .item {
+    flex: none;
+  }
+
+  /* Stats */
+  .stats .content > .row:first-of-type {
+    display: inline-block;
+  }
+
+  .stats .img-block, .stats .info {
+    width: 100%;
+  }
+
+  .stats .img-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  .stats .img-block > img {
+    margin: 0;
+  }
+
+  .stats .info {
+    padding: 0 16px;
+    margin-top: 140px;
+  }
+
+  .stats-trend {
+    left: 343px;
+    bottom: 338px;
+  }
+
+  .stats .sub-title {
+    text-align: center;
+  }
+
+  .stats .sub-title::before {
+    left: 140px;
+    top: -1px;
+  }
+
 }

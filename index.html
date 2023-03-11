@@ -41,12 +41,12 @@
       <div class="content">
         <div class="navbar">
           <!-- logo -->
-          <a href="#">
+          <a href="#" class="nav-logo">
             <span style="color: #102e6a; font-size: 2.757rem;">Min</span><span style="color: #f3690f; font-size: 2.757rem; font-style: italic;">Home</span>
           </a>
 
           <!-- Navigation -->
-          <ul>
+          <ul class="nav-link">
             <li><a href="#home">Trang chủ</a></li>
             <li><a href="#services">Dịch vụ</a></li>
             <li><a href="#features">Nổi bật</a></li>
@@ -58,6 +58,28 @@
           <div class="action">
             <a href="#!">Sign in</a>
             <a href="#!" class="btn">Sign up</a>
+          </div>
+          <input type="checkbox" hidden name="" class="nav-input" id="input-check">
+          <label for="input-check" class="bars"><i class="fa-solid fa-bars"></i></label>
+          <label for="input-check" class="overlay"></label>
+          <!-- Mobile -->
+          <div class="nav-mobile">
+            <!-- Navigation -->
+            <ul class="link-mobile">
+              <li>
+                <a href="#home"><i class="fa-solid fa-house"></i>Trang chủ</a>
+              </li>
+              <li><a href="#services"><i class="fa-solid fa-cart-shopping"></i>Dịch vụ</a></li>
+              <li><a href="#features"><i class="fa-solid fa-tag"></i>Nổi bật</a></li>
+              <li><a href="#resources"><i class="fa-solid fa-star"></i>Thành tựu</a></li>
+              <li><a href="#contact"><i class="fa-solid fa-envelope"></i>Liên hệ</a></li>
+            </ul>
+  
+            <!-- Action -->
+            <div class="btn-mobile">
+              <a href="#!" class=""><i class="fa-solid fa-right-to-bracket"></i>Sign up</a>
+            </div>
+            <label for="input-check" class="mobile-close"><i class="fa-solid fa-xmark"></i></label>
           </div>
         </div>
       </div>
@@ -75,7 +97,7 @@
               </p>
               <p>Nhận các giao dịch bất động sản tốt nhất trước khi chúng  được tung ra thị trường đại chúng! 
                 giao dịch tịch thu nhà nóng với một tìm kiếm đươn giản.</p>
-              <a href="#!" class="btn hero-btn">Xem thêm</a>
+              <div class="hero-info"><a href="#!" class="btn hero-btn">Xem thêm</a></div>
             </div>
             <img
               src="./assets/img/bietthu.png"
@@ -160,7 +182,7 @@
           <li class="list-guide">
             <img src="./assets/img/icons1.png" alt="" class="img-guide" />
             <h3 class="title">Hướng dẫn mua</h3>
-            <a href="" class="link-guide">
+            <a href="#!" class="link-guide">
               <span>Làm thế nào để mua</span>
               <img src="./assets/img/arrow.svg" alt="" class="arrow" />
             </a>
@@ -168,7 +190,7 @@
           <li class="list-guide">
             <img src="./assets/img/icons2.png" alt="" class="img-guide" />
             <h3 class="title">Hướng dẫn thuê</h3>
-            <a href="" class="link-guide">
+            <a href="#!" class="link-guide">
               <span>Làm thế nào để thuê</span>
               <img src="./assets/img/arrow.svg" alt="" class="arrow" />
             </a>
@@ -176,14 +198,14 @@
           <li class="list-guide">
             <img src="./assets/img/icons3.png" alt="" class="img-guide" />
             <h3 class="title">Hướng dẫn bán</h3>
-            <a href="" class="link-guide">
+            <a href="#!" class="link-guide">
               <span>Làm thế nào để bán</span>
               <img src="./assets/img/arrow.svg" alt="" class="arrow" />
             </a>
           </li>
         </ul>
         <div class="guide-cta">
-          <a href="" class="btn">Bản nguyên tác đầy đủ</a>
+          <a href="#!" class="btn">Bản nguyên tác đầy đủ</a>
         </div>
       </div>
       <!-- Featured -->
