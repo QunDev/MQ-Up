@@ -52,7 +52,7 @@ a {
   background-image: -o-linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
   background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%); */
   background: #e6f0ff;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 .header .content {
@@ -792,6 +792,109 @@ main {
   background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    width: 100% !important;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar .bars i {
+    display: block;
+  }
+
+  .nav-input:checked ~ .nav-mobile{
+    transform: translateX(0);
+  }
+
+  .mobile-close {
+    display: block;
+  }
+
+  .navbar .nav-link {
+    display: none;
+  }
+
+  .navbar .action {
+    display: none;
+  }
+
+  .nav-input:checked ~ .overlay {
+    display: block;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .navbar .nav-logo {
+    margin-left: 16px;
+  }
+
+  .hero .icon {
+    right: 110px;
+  }
+
+  .featured .list {
+    flex-wrap: wrap;
+  }
+
+  .stats .content > .row:first-of-type {
+    display: inline-block;
+  }
+
+  .stats .img-block, .stats .info {
+    width: 100%;
+  }
+
+  .stats .img-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  .stats .img-block > img {
+    margin: 0;
+  }
+
+  .stats .info {
+    padding: 0 16px;
+    margin-top: 140px;
+  }
+
+  .stats-trend {
+    left: 343px;
+    bottom: 338px;
+  }
+
+  .stats .sub-title {
+    text-align: center;
+  }
+
+  .stats .sub-title::before {
+    left: 140px;
+    top: -1px;
+  }
+
+  .stats .sub-title::before {
+    display: none;
+  }
+
+  .stats .row:last-of-type {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .subcription img {
+    right: 15px;
+  }
+
+  .footer .row {
+    gap: 0;
+  }
+}
+
 @media (max-width: 750px) {
   .content {
     width: 100% !important;
@@ -897,7 +1000,7 @@ main {
   }
 
   /* Stats */
-  .stats .content > .row:first-of-type {
+    .stats .content > .row:first-of-type {
     display: inline-block;
   }
 
@@ -1070,5 +1173,64 @@ main {
     width: 30%;
     margin-left: 32px;
   }
+
+}
+
+/* ==================ipad========================= */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .content {
+    width: 100% !important;
+  }
+
+  .hero-img {
+    right: 0;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    margin: 0 16px;
+  }
+
+  .navbar .action {
+    margin: 0;
+  }
+
+  .hero-img {
+    right: 0;
+  }
+
+  .hero .info {
+    margin-left: 32px;
+  }
+
+  .clients .row {
+    justify-content: space-around;
+  }
+
+  .clients .clients-img a {
+    padding: 0;
+  }
+
+  .clients .clients-img {
+    justify-content: space-around;
+  }
+
+  .featured .sub-title {
+    margin-left: 16px;
+  }
+
+  .featured .desc {
+    margin-left: 16px;
+  }
+
+  .featured .link {
+    margin-right: 16px;
+  }
+
+  .footer .row {
+    margin: 16px;
+  }
+
 
 }
