@@ -14,7 +14,7 @@ html {
 
 /* common */
 .content {
-  width: 1110px;
+  max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -65,8 +65,9 @@ a {
   padding: 12px 0;
 }
 
-.navbar img {
-  margin-right: 50px;
+.nav-logo {
+  display: flex;
+  align-items: center;
 }
 
 .navbar .nav-link {
@@ -423,7 +424,35 @@ main {
 
 #features header {
   margin-bottom: 90px;
+  margin-left: 16px;
 }
+
+.img-hover {
+  display: none;
+}
+
+.list .item1:hover .img-hover{
+  display: inline-block;
+}
+
+.list .item1:hover .thumb1 {
+  display: none;
+}
+.list .item2:hover .img-hover{
+  display: inline-block;
+}
+
+.list .item2:hover .thumb1 {
+  display: none;
+}
+.list .item3:hover .img-hover{
+  display: inline-block;
+}
+
+.list .item3:hover .thumb1 {
+  display: none;
+}
+
 
 /* ===========Stats=========== */
 .stats {
@@ -668,6 +697,7 @@ main {
 }
 
 .footer .row {
+  margin-left: 16px;
   display: flex;
   gap: 50px;
 }
@@ -792,6 +822,63 @@ main {
   background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
 }
 
+@media (min-width: 600px) and (max-width: 1024px) {
+  .content {
+    width: 100% !important;
+  }
+
+  .hero-img {
+    right: 0;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    margin: 0 16px;
+  }
+
+  .navbar .action {
+    margin: 0;
+  }
+
+  .hero-img {
+    right: 0;
+  }
+
+  .hero .info {
+    margin-left: 32px;
+  }
+
+  .clients .row {
+    justify-content: space-around;
+  }
+
+  .clients .clients-img a {
+    padding: 0;
+  }
+
+  .clients .clients-img {
+    justify-content: space-around;
+  }
+
+  .featured .sub-title {
+    margin-left: 16px;
+  }
+
+  .featured .desc {
+    margin-left: 16px;
+  }
+
+  .featured .link {
+    margin-right: 16px;
+  }
+
+  .footer .row {
+    margin: 16px;
+  }
+
+
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .content {
     width: 100% !important;
@@ -895,7 +982,7 @@ main {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
   .content {
     width: 100% !important;
   }
@@ -1096,9 +1183,8 @@ main {
   .featured .link {
     position: absolute;
     bottom: 35px;
+    right: 16px;
     display: inline-block;
-    text-align: center;
-    width: 100%;
   }
 
   .stats {
@@ -1176,61 +1262,22 @@ main {
 
 }
 
-/* ==================ipad========================= */
-
-@media (min-width: 600px) and (max-width: 1024px) {
-  .content {
-    width: 100% !important;
-  }
-
+@media (min-width: 1024px) {
   .hero-img {
     right: 0;
-  }
-
-  .navbar {
-    justify-content: space-between;
-    margin: 0 16px;
-  }
-
-  .navbar .action {
-    margin: 0;
-  }
-
-  .hero-img {
-    right: 0;
-  }
-
-  .hero .info {
-    margin-left: 32px;
-  }
-
-  .clients .row {
-    justify-content: space-around;
   }
 
   .clients .clients-img a {
     padding: 0;
   }
 
-  .clients .clients-img {
+  .clients .row {
     justify-content: space-around;
   }
 
-  .featured .sub-title {
-    margin-left: 16px;
+  .stats .sub-title {
+    font-size: 5rem;
   }
-
-  .featured .desc {
-    margin-left: 16px;
-  }
-
-  .featured .link {
-    margin-right: 16px;
-  }
-
-  .footer .row {
-    margin: 16px;
-  }
-
-
 }
+
+
