@@ -371,13 +371,14 @@ main {
   justify-content: center;
 }
 
-.featured .item {
+.featured .item, .featured .item-hover {
   flex: 1;
   border-radius: 12px;
   background: #fff;
+  max-width: 33vw;
 }
 
-.featured .item .thumb {
+.featured .item .thumb, .featured .item-hover .img-hover {
   width: 100%;
   height: 227px;
   object-fit: cover;
@@ -389,20 +390,30 @@ main {
   padding: 17px 20px 24px;
 }
 
-.featured .item .title {
+.featured .item .title, .featured .item-hover .title-hover {
   font-weight: 600;
   font-size: 2rem;
   line-height: 1;
   color: #000339;
 }
 
-.featured .item .desc {
+.featured .item .desc, .featured .item-hover .desc-hover {
   margin-top: 11px;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.5;
   color: #a3a6ab;
   word-break: break-all;
+}
+
+.featured .item-hover .desc-hover {
+  font-weight: 600;
+  color: #000;
+}
+
+.list .item:hover .desc {
+  color: #e8615b;
+  font-weight: 600;
 }
 
 .featured .item .info {
@@ -429,29 +440,29 @@ main {
   margin-left: 16px;
 }
 
-.img-hover {
+.item-hover {
   display: none;
 }
 
-.list .item1:hover .img-hover{
+.list .item1:hover .item-hover{
   display: inline-block;
 }
 
-.list .item1:hover .thumb1 {
+.list .item1:hover .item {
   display: none;
 }
-.list .item2:hover .img-hover{
+.list .item2:hover .item-hover{
   display: inline-block;
 }
 
-.list .item2:hover .thumb1 {
+.list .item2:hover .item {
   display: none;
 }
-.list .item3:hover .img-hover{
+.list .item3:hover .item-hover{
   display: inline-block;
 }
 
-.list .item3:hover .thumb1 {
+.list .item3:hover .item {
   display: none;
 }
 
