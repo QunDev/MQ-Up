@@ -118,7 +118,7 @@ a {
 }
 
 .hero .info {
-  width: 51%;
+  max-width: 51%;
 }
 
 .hero .info p:first-of-type {
@@ -179,6 +179,7 @@ h1 {
 
 main {
   background: #29315c;
+  padding-bottom: 8px;
 }
 
 .hero .icon p:first-child {
@@ -367,6 +368,7 @@ main {
   display: flex;
   gap: 30px;
   padding-bottom: 115px;
+  justify-content: center;
 }
 
 .featured .item {
@@ -1142,7 +1144,7 @@ main {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .hero .icon {
     display: none;
   }
